@@ -1,7 +1,3 @@
-mondelez vietnam VC 
-master :- pts_3581_mondelez_vc
-stage :- pts_3581-mondelez_vc_fresh_conflicts
-dev:- pts_3581_mondelez_vc_fresh_dev_conflicts
 
 
 
