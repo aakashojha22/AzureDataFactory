@@ -1,0 +1,7 @@
+{
+	"name": "AzureDataLakeStorage306",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/2296b6b2-a855-4cfc-ad17-52ec4747f932/resourceGroups/InteliipaatDELab/providers/Microsoft.Storage/storageAccounts/intellipaatteststorageac",
+		"groupId": "dfs"
+	}
+}
