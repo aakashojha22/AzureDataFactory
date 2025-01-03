@@ -1,0 +1,9 @@
+{
+	"name": "intellipaat-test-lab-data-factory",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b9a68448-cd6d-46be-b556-0ca8baa9c198",
+		"tenantId": "93d2b581-c13e-4ba3-bdc5-cdba21fbbd4a"
+	}
+}
