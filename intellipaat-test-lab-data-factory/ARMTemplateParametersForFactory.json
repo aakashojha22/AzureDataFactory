@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "intellipaat-test-lab-data-factory"
+		},
+		"LSSourceCustomerCSV_accountKey": {
+			"value": ""
+		},
+		"LS_SourceDB_password": {
+			"value": ""
+		},
+		"LSSourceCustomerCSV_properties_typeProperties_url": {
+			"value": "https://intellipaatteststorageac.dfs.core.windows.net/"
+		},
+		"LS_SourceDB_properties_typeProperties_server": {
+			"value": "sourceserver4db.database.windows.net"
+		},
+		"LS_SourceDB_properties_typeProperties_database": {
+			"value": "sourcedb"
+		},
+		"LS_SourceDB_properties_typeProperties_userName": {
+			"value": "sqladmin"
+		},
+		"AzureDataLakeStorage306_properties_privateLinkResourceId": {
+			"value": "/subscriptions/2296b6b2-a855-4cfc-ad17-52ec4747f932/resourceGroups/InteliipaatDELab/providers/Microsoft.Storage/storageAccounts/intellipaatteststorageac"
+		},
+		"AzureDataLakeStorage306_properties_groupId": {
+			"value": "dfs"
+		}
+	}
+}
