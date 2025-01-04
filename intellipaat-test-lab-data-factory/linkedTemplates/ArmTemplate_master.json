@@ -15,6 +15,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'LS_SourceDB'"
 		},
+		"LS_Target_DB_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_Target_DB'"
+		},
 		"LSSourceCustomerCSV_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://intellipaatteststorageac.dfs.core.windows.net/"
@@ -38,6 +42,18 @@
 		"AzureDataLakeStorage306_properties_groupId": {
 			"type": "string",
 			"defaultValue": "dfs"
+		},
+		"LS_Target_DB_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "targetserver4db.database.windows.net"
+		},
+		"LS_Target_DB_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "targetDB"
+		},
+		"LS_Target_DB_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "sqladmin"
 		},
 		"containerUri": {
 			"type": "string",
@@ -72,6 +88,9 @@
 					"LSSourceCustomerCSV_accountKey": {
 						"value": "[parameters('LSSourceCustomerCSV_accountKey')]"
 					},
+					"LS_Target_DB_password": {
+						"value": "[parameters('LS_Target_DB_password')]"
+					},
 					"LS_SourceDB_properties_typeProperties_server": {
 						"value": "[parameters('LS_SourceDB_properties_typeProperties_server')]"
 					},
@@ -89,6 +108,15 @@
 					},
 					"LSSourceCustomerCSV_properties_typeProperties_url": {
 						"value": "[parameters('LSSourceCustomerCSV_properties_typeProperties_url')]"
+					},
+					"LS_Target_DB_properties_typeProperties_server": {
+						"value": "[parameters('LS_Target_DB_properties_typeProperties_server')]"
+					},
+					"LS_Target_DB_properties_typeProperties_database": {
+						"value": "[parameters('LS_Target_DB_properties_typeProperties_database')]"
+					},
+					"LS_Target_DB_properties_typeProperties_userName": {
+						"value": "[parameters('LS_Target_DB_properties_typeProperties_userName')]"
 					}
 				}
 			},

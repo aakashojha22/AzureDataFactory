@@ -11,6 +11,9 @@
 		"LS_SourceDB_password": {
 			"value": ""
 		},
+		"LS_Target_DB_password": {
+			"value": ""
+		},
 		"LSSourceCustomerCSV_properties_typeProperties_url": {
 			"value": "https://intellipaatteststorageac.dfs.core.windows.net/"
 		},
@@ -28,6 +31,15 @@
 		},
 		"AzureDataLakeStorage306_properties_groupId": {
 			"value": "dfs"
+		},
+		"LS_Target_DB_properties_typeProperties_server": {
+			"value": "targetserver4db.database.windows.net"
+		},
+		"LS_Target_DB_properties_typeProperties_database": {
+			"value": "targetDB"
+		},
+		"LS_Target_DB_properties_typeProperties_userName": {
+			"value": "sqladmin"
 		}
 	}
 }
