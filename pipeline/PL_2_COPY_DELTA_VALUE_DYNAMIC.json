@@ -136,7 +136,7 @@
 				]
 			},
 			{
-				"name": "Stored procedure1",
+				"name": "UpdateWatermarkValue",
 				"type": "SqlServerStoredProcedure",
 				"dependsOn": [
 					{
