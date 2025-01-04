@@ -1,0 +1,26 @@
+{
+	"name": "DS_TargetDB_Dynamic",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Target_DB",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"Table_Name": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "DS_DB_DATA_COPY"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"table": {
+				"value": "@dataset().Table_Name",
+				"type": "Expression"
+			}
+		}
+	}
+}
