@@ -26,12 +26,6 @@
 		"LS_SourceDB_properties_typeProperties_userName": {
 			"value": "sqladmin"
 		},
-		"AzureDataLakeStorage306_properties_privateLinkResourceId": {
-			"value": "/subscriptions/2296b6b2-a855-4cfc-ad17-52ec4747f932/resourceGroups/InteliipaatDELab/providers/Microsoft.Storage/storageAccounts/intellipaatteststorageac"
-		},
-		"AzureDataLakeStorage306_properties_groupId": {
-			"value": "dfs"
-		},
 		"LS_Target_DB_properties_typeProperties_server": {
 			"value": "targetserver4db.database.windows.net"
 		},
@@ -40,6 +34,12 @@
 		},
 		"LS_Target_DB_properties_typeProperties_userName": {
 			"value": "sqladmin"
+		},
+		"AzureDataLakeStorage306_properties_privateLinkResourceId": {
+			"value": "/subscriptions/2296b6b2-a855-4cfc-ad17-52ec4747f932/resourceGroups/InteliipaatDELab/providers/Microsoft.Storage/storageAccounts/intellipaatteststorageac"
+		},
+		"AzureDataLakeStorage306_properties_groupId": {
+			"value": "dfs"
 		}
 	}
 }
