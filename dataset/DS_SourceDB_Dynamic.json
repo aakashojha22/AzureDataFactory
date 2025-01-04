@@ -1,0 +1,15 @@
+{
+	"name": "DS_SourceDB_Dynamic",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SourceDB",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "DS_DB_DATA_COPY"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	}
+}
