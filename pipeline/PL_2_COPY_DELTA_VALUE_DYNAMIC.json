@@ -46,7 +46,7 @@
 					"source": {
 						"type": "AzureSqlSource",
 						"sqlReaderQuery": {
-							"value": "SELECT MAX(InsertDateTime)  FROM  @{pipeline().parameters.TableName}",
+							"value": "SELECT MAX(InsertDateTime)  as MaxInsertDateTime FROM  @{pipeline().parameters.TableName}",
 							"type": "Expression"
 						},
 						"queryTimeout": "02:00:00",
@@ -93,7 +93,7 @@
 					"source": {
 						"type": "AzureSqlSource",
 						"sqlReaderQuery": {
-							"value": "select * from @{pipeline().parameters.TableName}\nwhere InsertDateTime > '@{activity('TargetWatermarkValue').output.firstRow.WatermarkValue}'\nand InsertDateTime <= '@{activity('Get_Max_InsertTime_SourceDB').output.firstRow.InsertDateTime}'\n",
+							"value": "select * from @{pipeline().parameters.TableName}\nwhere InsertDateTime > '@{activity('TargetWatermarkValue').output.firstRow.WatermarkValue}'\nand InsertDateTime <= '@{activity('Get_Max_InsertTime_SourceDB').output.firstRow.MaxInsertDateTime}'\n",
 							"type": "Expression"
 						},
 						"queryTimeout": "02:00:00",
