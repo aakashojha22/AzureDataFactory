@@ -31,7 +31,7 @@
 				}
 			},
 			{
-				"name": "Max_Sour",
+				"name": "Get_Max_InsertTime_SourceDB",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
@@ -41,7 +41,18 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "AzureSqlSource",
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"dataset": {
+						"referenceName": "DS_SourceDB_Dynamic",
+						"type": "DatasetReference"
+					}
+				}
 			}
 		],
 		"parameters": {
