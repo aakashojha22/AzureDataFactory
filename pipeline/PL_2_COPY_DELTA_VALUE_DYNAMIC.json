@@ -46,7 +46,7 @@
 					"source": {
 						"type": "AzureSqlSource",
 						"sqlReaderQuery": {
-							"value": "Select max(InsertDateTime\n)  FROM  '@{pipeline().parameters.TableName}';",
+							"value": "@concat('SELECT MAX(InsertDateTime) FROM ', pipeline().parameters.TableName)\n",
 							"type": "Expression"
 						},
 						"queryTimeout": "02:00:00",
