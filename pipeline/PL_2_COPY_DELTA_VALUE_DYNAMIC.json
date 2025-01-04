@@ -167,6 +167,13 @@
 								"type": "Expression"
 							},
 							"type": "String"
+						},
+						"NewTime": {
+							"value": {
+								"value": "@activity('Get_Max_InsertTime_SourceDB').output.firstRow",
+								"type": "Expression"
+							},
+							"type": "Datetime"
 						}
 					}
 				},
