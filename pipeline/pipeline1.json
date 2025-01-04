@@ -1,0 +1,9 @@
+{
+	"name": "pipeline1",
+	"properties": {
+		"folder": {
+			"name": "PL_DB_DATA_COPY"
+		},
+		"annotations": []
+	}
+}
