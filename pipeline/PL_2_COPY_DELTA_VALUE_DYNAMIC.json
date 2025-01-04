@@ -170,7 +170,7 @@
 						},
 						"NewTime": {
 							"value": {
-								"value": "@activity('Get_Max_InsertTime_SourceDB').output.firstRow",
+								"value": "@activity('Get_Max_InsertTime_SourceDB').output.firstRow.MaxInsertDateTime",
 								"type": "Expression"
 							},
 							"type": "Datetime"
