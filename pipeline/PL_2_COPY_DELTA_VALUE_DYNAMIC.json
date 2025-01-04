@@ -93,7 +93,7 @@
 					"source": {
 						"type": "AzureSqlSource",
 						"sqlReaderQuery": {
-							"value": "select * from @{pipeline().parameters.TableName}\n\nwhere InsertDateTime >@{activity('TargetWatermarkValue').output.firstRow }\nand \nInsertDateTime<= @{activity('Get_Max_InsertTime_SourceDB').output.firstRow}",
+							"value": "select * from @{pipeline().parameters.TableName}\n\nwhere InsertDateTime >'@{activity('TargetWatermarkValue').output.firstRow }'\nand \nInsertDateTime<= '@{activity('Get_Max_InsertTime_SourceDB').output.firstRow}'",
 							"type": "Expression"
 						},
 						"queryTimeout": "02:00:00",
